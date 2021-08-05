@@ -23,8 +23,7 @@ const descriptionInputRef = useRef()
 
         }
        
-console.log(meetupData)
-
+props.onAddMeetup(meetupData)
 
     }
 
