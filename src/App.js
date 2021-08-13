@@ -4,11 +4,11 @@ import AllMeetupsPage from "./pages/AllMeetups";
 import NewMeetupPage from "./pages/NewMeetup";
 import FavoritesPage from "./pages/Favorites";
 import MainNavigation from './components/layout/MainNavigation'
-import Layout
- from "./components/layout/Layout";
+import Layout from "./components/layout/Layout";
+import Footer from "./components/layout/Footer"
 function App() {
   return (
-        <Layout>
+        <><Layout>
       <Switch>
         <Route exact path="/">
           <AllMeetupsPage />
@@ -21,6 +21,8 @@ function App() {
         </Route>
       </Switch>
     </Layout>
+    <Footer />
+    </>
   );
 }
 
